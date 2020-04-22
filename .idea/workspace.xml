@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f1ab263-88bc-4db8-a074-c1c06b1b9a0d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Navigation/Stack.js" beforeDir="false" afterPath="$PROJECT_DIR$/Navigation/Stack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Navigation/Tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/Navigation/Tabs.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +42,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587551267128</updated>
-      <workItem from="1587551269704" duration="4612000" />
+      <workItem from="1587551269704" duration="5120000" />
     </task>
     <servers />
   </component>
@@ -51,9 +50,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="811" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1587553650309">
+    <state x="811" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1587556747479">
       <screen x="0" y="23" width="1680" height="979" />
     </state>
-    <state x="811" y="241" width="670" height="676" key="search.everywhere.popup/0.23.1680.979@0.23.1680.979" timestamp="1587553650309" />
+    <state x="811" y="241" width="670" height="676" key="search.everywhere.popup/0.23.1680.979@0.23.1680.979" timestamp="1587556747479" />
   </component>
 </project>
