@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f1ab263-88bc-4db8-a074-c1c06b1b9a0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Navigation/Stack.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Navigation/Tabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screens/Favs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screens/Movies.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screens/Search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screens/TV.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Navigation/Tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/Navigation/Tabs.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +43,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587551267128</updated>
-      <workItem from="1587551269704" duration="3887000" />
+      <workItem from="1587551269704" duration="4369000" />
     </task>
     <servers />
   </component>
