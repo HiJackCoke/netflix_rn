@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f1ab263-88bc-4db8-a074-c1c06b1b9a0d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Navigation/Stack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Navigation/Tabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screens/Favs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screens/Movies.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screens/Search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screens/TV.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +22,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1atO8svAQ01Pi8d4jJD6MGOvffK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -41,11 +51,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587551267128</updated>
-      <workItem from="1587551269704" duration="1764000" />
+      <workItem from="1587551269704" duration="3887000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="811" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1587553650309">
+      <screen x="0" y="23" width="1680" height="979" />
+    </state>
+    <state x="811" y="241" width="670" height="676" key="search.everywhere.popup/0.23.1680.979@0.23.1680.979" timestamp="1587553650309" />
   </component>
 </project>
