@@ -4,7 +4,7 @@ import {View, Text} from 'react-native'
 class Movies extends Component {
     render() {
         return (
-            <View>
+            <View style={{ flex : 1, backgroundColor : "black"}}>
                 <Text>Movies</Text>
             </View>
         );
