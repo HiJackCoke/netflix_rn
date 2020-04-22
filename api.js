@@ -14,12 +14,17 @@ const makeRequest = (path, params) =>
 export const movieAPI = {
     nowPlaying : () => makeRequest("/movie/now_playing"),
     popular : () => makeRequest("/movie/popular"),
-    upcoming : () => makeRequest("/movie/upcoming", {region: "kr"})
+    upcoming : () => makeRequest("/movie/upcoming", {region: "kr"}),
+    search : query => makeRequest("/search/movie", {query}),
+    movie: id => makeRequest(`/movie/${id}`),
+    discover : () => makeRequest('/discover/movie')
 };
 
 export const tvAPI = {
     today : () => makeRequest('/tv/airing_today'),
     thisWeek : () => makeRequest('/tv/on_the_air'),
     topRated : () => makeRequest('/tv/top_rated'),
-    popular : () => makeRequest('/tv/popular')
+    popular : () => makeRequest('/tv/popular'),
+    search : query => makeRequest('/search/tv', {query}),
+    tv : id => makeRequest(`/tv/${id}`)
 };
