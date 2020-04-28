@@ -43,6 +43,8 @@ export default () => {
 
 
     return (
-        <MoviePresenter/>
+        <MoviePresenter
+            {...movies}
+        />
     )
 }
