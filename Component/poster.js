@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const Image = styled.Image`
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 180px;
   border-radius: 4px;
 `;
 
