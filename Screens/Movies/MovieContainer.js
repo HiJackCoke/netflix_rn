@@ -1,12 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import {View, Text} from 'react-native'
 import {movieAPI} from "../../api";
+import MoviePresenter from "./MoviePresenter";
 
 
 
 export default () => {
 
     const [movies, setMovies] = useState({
+        loading : true,
         nowPlaying : [],
         popular : [],
         upcoming : [],
@@ -22,6 +24,7 @@ export default () => {
 
 
         setMovies({
+            loading: false,
             nowPlaying: nowPlaying,
             popular : popular,
             upcoming : upcoming,
@@ -36,11 +39,10 @@ export default () => {
         getData();
     }, []);
 
+
+
+
     return (
-        <View>
-            <Text>nowPlaying data is {movies.nowPlaying?.length}</Text>
-            <Text>popular data is {movies.popular?.length}</Text>
-            <Text>upcoming data is {movies.upcoming?.length}</Text>
-        </View>
+        <MoviePresenter/>
     )
 }

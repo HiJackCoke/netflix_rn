@@ -6,6 +6,7 @@ import {tvAPI} from '../../api'
 export default () => {
 
     const [TV, setTV] = useState({
+        loading : true,
         today : [],
         thisWeek : [],
         topRated : [],
