@@ -41,4 +41,5 @@ export const tvAPI = {
     tv : id => geyAnything(`/tv/${id}`)
 };
 
-export const apiImage = path => `https://imgae.tmdb.org/t/p/w500${path}`;
+// export const apiImage = path => `https://imgae.tmdb.org/t/p/w500${path}`;
+export const apiImage = path => `https://image.tmdb.org/t/p/w500${path}`;
