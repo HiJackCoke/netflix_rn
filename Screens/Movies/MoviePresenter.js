@@ -16,7 +16,7 @@ const Container = styled.View``;
 
 const SliderContainer = styled.View`
   width: 100%;
-  height: ${HEIGHT/4}px;
+  height: ${HEIGHT/3}px;
   margin-bottom: 30px;
 `;
 

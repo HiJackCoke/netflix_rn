@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {View, Text} from 'react-native'
 import {tvAPI} from '../../api'
+import TvPresenter from "./TVPresenter";
 
 
 export default () => {
@@ -24,6 +25,7 @@ export default () => {
         const [popular, popularError] = await tvAPI.popular()
 
         setTV({
+            loading: false,
             today : today,
             thisWeek : thisWeek,
             topRated : topRated,
@@ -43,12 +45,7 @@ export default () => {
 
     return(
         // ?.length 의 의미
-        <View>
-            <Text>today data is {TV.today ?.length}</Text>
-            <Text>this week data is{TV.thisWeek?.length}</Text>
-            <Text>top rated data is{TV.topRated?.length}</Text>
-            <Text>popular data is{TV.popular.length}</Text>
-        </View>
+        <TvPresenter {...TV}/>
     )
 };
 

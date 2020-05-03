@@ -52,8 +52,8 @@ export default ({navigation, route}) => {
                 }
             }}
         >
-            <Tabs.Screen name="Movies" component={Movie}/>
             <Tabs.Screen name="TV" component={TV}/>
+            <Tabs.Screen name="Movies" component={Movie}/>
             <Tabs.Screen name="Favs" component={Favs}/>
             <Tabs.Screen name="Search" component={Search}/>
 
