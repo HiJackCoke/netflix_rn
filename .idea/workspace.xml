@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f1ab263-88bc-4db8-a074-c1c06b1b9a0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Component/Input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Navigation/Tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/Navigation/Tabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screens/Search/SearchContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screens/Search/SearchPresenter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screens/Search/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screens/Search.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +51,7 @@
       <workItem from="1588068813579" duration="11092000" />
       <workItem from="1588141860629" duration="22000" />
       <workItem from="1588155976879" duration="102000" />
-      <workItem from="1588489069000" duration="8185000" />
+      <workItem from="1588489069000" duration="8534000" />
     </task>
     <servers />
   </component>
@@ -56,6 +59,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1028" y="246" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588497416686">
+      <screen x="0" y="23" width="1680" height="979" />
+    </state>
+    <state x="1028" y="246" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.979@0.23.1680.979" timestamp="1588497416686" />
     <state x="811" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1588079497667">
       <screen x="0" y="23" width="1680" height="979" />
     </state>
