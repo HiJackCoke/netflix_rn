@@ -8,6 +8,7 @@ import Title from "../../Component/title";
 import Vertical from "../../Component/vertical";
 import Horizontal from "../../Component/Horizontal";
 import ScrollContainer from "../../Component/ScrollContainer";
+import HorizontalSlider from "../../Component/HorizontalSlider";
 
 
 const {width : WIDTH, height : HEIGHT} = Dimensions.get("screen")
@@ -44,13 +45,7 @@ const MoviePresenter = ({ loading, nowPlaying, popular, upcoming }) => (
                 </Swiper>
             </SliderContainer>
             <Container>
-                <Title title={"Popular Movies"}/>
-                <ScrollView
-                    horizontal
-                    style={{marginTop: 20, marginBottom : 40}}
-                    contentContainerStyle={{paddingLeft : 30}}
-                    showHorizontalScrollIndicator={false}
-                >
+                <HorizontalSlider title={"Popular Movies"}>
                     {popular.map(movie => (
                         <Vertical
                             key={movie.id}
@@ -60,7 +55,7 @@ const MoviePresenter = ({ loading, nowPlaying, popular, upcoming }) => (
                             title={movie.original_title}
                         />
                     ))}
-                </ScrollView>
+                </HorizontalSlider>
                 <Title title={"Coming soon"}/>
                 <UpcomingContainer>
                     {upcoming.map(movie => (
