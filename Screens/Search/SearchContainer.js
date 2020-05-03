@@ -1,41 +1,33 @@
 import React, {useState} from 'react';
-import {View, Text} from 'react-native'
 import SearchPresenter from "./SearchPresenter";
 import {movieAPI, tvAPI} from '../../api'
 
 export default () => {
-
-    const [keyWord, setKeyWord] = useState("");
+    const [keyword, setKeyword] = useState("");
     const [results, setResults] = useState({
-        movies : [],
-        shows : [],
-        movieError : null,
-        showError : null
+        movies: [],
+        shows: [],
+        movieError: null,
+        showsError: null
     });
-
-    const onChange = text => setKeyWord(text);
+    const onChange = text => setKeyword(text);
     const search = async () => {
-        const [movies, movieError] = await movieAPI.search(keyWord);
-        const [shows, showError] = await tvAPI.search(keyWord);
-
+        const [movies, movieError] = await movieAPI.search(keyword);
+        const [shows, showsError] = await tvAPI.search(keyword);
         setResults({
-            movies : movies,
-            shows : shows,
-            movieError : movieError,
-            showError : showError
-        })
-
+            movies,
+            shows,
+            movieError,
+            showsError
+        });
     };
 
-    render() {
-        return (
-            <SearchPresenter
-                {...results}
-                onChange={onChange}
-                onSubmit={search}
-                keyWord={keyWord}
-            />
-        );
-    }
-}
-
+    return (
+        <SearchPresenter
+            {...results}
+            onChange={onChange}
+            onSubmit={search}
+            keyword={keyword}
+        />
+    );
+};
