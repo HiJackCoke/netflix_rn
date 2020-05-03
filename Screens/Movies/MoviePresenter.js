@@ -22,8 +22,9 @@ const SliderContainer = styled.View`
 const MoviePresenter = ({ loading, nowPlaying, popular }) => (
     <ScrollView
     
-        style={{backgroundColor: "black"}}
+        style={{}}
         contentContainerStyle={{
+            backgroundColor: "black",
             flex:1,
             justifyContent: loading ? "center" : "flex-start"
         }}
@@ -49,7 +50,12 @@ const MoviePresenter = ({ loading, nowPlaying, popular }) => (
                 </SliderContainer>
                 <Container>
                     <Title title={"Popular Movies"}/>
-                    <ScrollView horizontal>
+                    <ScrollView
+                        horizontal
+                        style={{marginTop: 20}}
+                        contentContainerStyle={{paddingLeft : 30}}
+                        showHorizontalScrollIndicator={false}
+                    >
                         {popular.map(movie => (
                             <Vertical key={movie.id} votes={movie.vote_average} poster={movie.poster_path} title={movie.original_title}/>
                         ))}
