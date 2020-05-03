@@ -19,6 +19,10 @@ const SliderContainer = styled.View`
   margin-bottom: 30px;
 `;
 
+const UpcomingContainer = styled.View`
+  margin-top: 20px;
+`;
+
 
 const MoviePresenter = ({ loading, nowPlaying, popular, upcoming }) => (
     <ScrollView
@@ -66,16 +70,18 @@ const MoviePresenter = ({ loading, nowPlaying, popular, upcoming }) => (
                         ))}
                     </ScrollView>
                     <Title title={"Coming soon"}/>
-                    {upcoming.map(movie => (
-                        <Horizontal
-                            key={movie.id}
-                            poster={movie.poster_path}
-                            overview={movie.overview}
-                            votes={movie.vote_average}
-                            id={movie.id}
-                            title={movie.original_title}
-                        />
-                    ))}
+                    <UpcomingContainer>
+                        {upcoming.map(movie => (
+                            <Horizontal
+                                key={movie.id}
+                                poster={movie.poster_path}
+                                overview={movie.overview}
+                                releaseDate={movie.release_date}
+                                id={movie.id}
+                                title={movie.original_title}
+                            />
+                        ))}
+                    </UpcomingContainer>
                 </Container>
             </>
         )}
