@@ -6,8 +6,9 @@ import styled from "styled-components";
 const Text = styled.Text`
   color: white;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
   margin-left: 30px;
+  margin-top: 20px;
 `;
 
 

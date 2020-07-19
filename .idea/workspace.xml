@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2f1ab263-88bc-4db8-a074-c1c06b1b9a0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Component/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/Component/Input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Component/title.js" beforeDir="false" afterPath="$PROJECT_DIR$/Component/title.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Component/vertical.js" beforeDir="false" afterPath="$PROJECT_DIR$/Component/vertical.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Screens/Search/SearchContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/Search/SearchContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Screens/Search/SearchPresenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/Search/SearchPresenter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/Utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +53,17 @@
       <workItem from="1588068813579" duration="11092000" />
       <workItem from="1588141860629" duration="22000" />
       <workItem from="1588155976879" duration="102000" />
-      <workItem from="1588489069000" duration="10398000" />
+      <workItem from="1588489069000" duration="11213000" />
+      <workItem from="1588825935761" duration="8000" />
+      <workItem from="1589602370581" duration="84000" />
+      <workItem from="1590290181378" duration="49000" />
+      <workItem from="1594113571677" duration="1376000" />
+      <workItem from="1594175460078" duration="54000" />
+      <workItem from="1594177577413" duration="26000" />
+      <workItem from="1594283536351" duration="173000" />
+      <workItem from="1594711570744" duration="67000" />
+      <workItem from="1595149078795" duration="25000" />
+      <workItem from="1595149298574" duration="754000" />
     </task>
     <servers />
   </component>

@@ -1,33 +1,36 @@
 import React, {useState} from 'react';
 import SearchPresenter from "./SearchPresenter";
-import {movieAPI, tvAPI} from '../../api'
+import {movieAPI, tvAPI} from "../../api"
 
 export default () => {
+
     const [keyword, setKeyword] = useState("");
     const [results, setResults] = useState({
-        movies: [],
-        shows: [],
-        movieError: null,
-        showsError: null
+        movies : [],
+        shows : [],
+        movieError : null,
+        showError : null
     });
-    const onChange = text => setKeyword(text);
+
+    const onChanger = text => setKeyword(text);
     const search = async () => {
         const [movies, movieError] = await movieAPI.search(keyword);
-        const [shows, showsError] = await tvAPI.search(keyword);
+        const [shows, showError] = await tvAPI.search(keyword);
+
         setResults({
             movies,
             shows,
             movieError,
-            showsError
+            showError
         });
     };
 
     return (
         <SearchPresenter
             {...results}
-            onChange={onChange}
+            onChange={onChanger}
             onSubmit={search}
             keyword={keyword}
         />
-    );
+    )
 };
