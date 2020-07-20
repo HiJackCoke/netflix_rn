@@ -27,7 +27,7 @@ const Vertical = ({ id, poster, title, votes }) => {
             id,
             poster,
             title,
-            votes
+            votes,
         })
     }
 

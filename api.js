@@ -42,7 +42,8 @@ export const tvAPI = {
 };
 
 // export const apiImage = path => `https://imgae.tmdb.org/t/p/w500${path}`;
-export const apiImage = path =>
-    path
-        ? `https://image.tmdb.org/t/p/w500${path}`
-        : "https://images.unsplash.com/photo-1571847140471-1d7766e825ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=673&q=80";;
+export const apiImage = (
+    path,
+    defaultPoster = "https://images.unsplash.com/photo-1571847140471-1d7766e825ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=673&q=80"
+) => (path ? `https://image.tmdb.org/t/p/w500${path}` : defaultPoster);
+

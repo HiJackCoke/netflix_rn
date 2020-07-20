@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components/native";
+import PropTypes from 'prop-types';
 
 
 const Container = styled.Text`
@@ -10,9 +11,11 @@ const Container = styled.Text`
 `;
 
 const Votes = ({votes}) =>
-    <Container>⭐️ {votes} / 10</Container>
+    <Container>⭐️ {votes} / 10</Container>;
 
-
+Votes.propType = {
+    votes : PropTypes.number.isRequired
+};
 
 
 export default Votes;
