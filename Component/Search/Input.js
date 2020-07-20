@@ -15,18 +15,18 @@ const TextInput = styled.TextInput`
 const Input = ({placeholder, value, onChange, onSubmit}) => (
     <TextInput
         value={value}
-        onChangeText={onChange}
         placeholder={placeholder}
-        onSubmitEditting={onSubmit}
+        onChangeText={onChange}
+        onSubmitEditing={onSubmit}
         returnKeyType={"search"}
     />
-);
-
+)
 Input.propTypes = {
-    placeholder : PropTypes.string.isRequired,
     value : PropTypes.string.isRequired,
+    placeholder : PropTypes.string.isRequired,
     onChange : PropTypes.func.isRequired,
     onSubmit : PropTypes.func.isRequired
 };
+
 
 export default Input;

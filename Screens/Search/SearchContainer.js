@@ -12,8 +12,13 @@ export default () => {
         showError : null
     });
 
-    const onChanger = text => setKeyword(text);
+    const onChange = text => setKeyword(text);
     const search = async () => {
+
+        if(keyword === "") {
+            return;
+        }
+
         const [movies, movieError] = await movieAPI.search(keyword);
         const [shows, showError] = await tvAPI.search(keyword);
 
@@ -28,7 +33,7 @@ export default () => {
     return (
         <SearchPresenter
             {...results}
-            onChange={onChanger}
+            onChange={onChange}
             onSubmit={search}
             keyword={keyword}
         />

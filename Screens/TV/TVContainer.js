@@ -6,6 +6,7 @@ import TvPresenter from "./TVPresenter";
 
 export default () => {
 
+    const [refreshing, setRefreshing] = useState(false)
     const [TV, setTV] = useState({
         loading : true,
         today : [],
@@ -45,7 +46,10 @@ export default () => {
 
     return(
         // ?.length 의 의미
-        <TvPresenter {...TV}/>
+        <TvPresenter
+            {...TV}
+            refreshFn={getData}
+        />
     )
 };
 

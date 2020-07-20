@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f1ab263-88bc-4db8-a074-c1c06b1b9a0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Component/Search/Input.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Component/Input.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Component/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/Component/List.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Component/ScrollContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Component/ScrollContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Component/poster.js" beforeDir="false" afterPath="$PROJECT_DIR$/Component/poster.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Component/Search/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/Component/Search/Input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screens/Movies/MovieContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/Movies/MovieContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screens/Movies/MoviePresenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/Movies/MoviePresenter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screens/Search/SearchContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/Search/SearchContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Screens/Search/SearchPresenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/Search/SearchPresenter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screens/TV/TVContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/TV/TVContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screens/TV/TVPresenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/TV/TVPresenter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +69,7 @@
       <workItem from="1595149298574" duration="1309000" />
       <workItem from="1595150751876" duration="93000" />
       <workItem from="1595153007773" duration="164000" />
-      <workItem from="1595236370097" duration="250000" />
+      <workItem from="1595236370097" duration="1852000" />
     </task>
     <servers />
   </component>
