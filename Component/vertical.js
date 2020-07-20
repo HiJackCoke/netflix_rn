@@ -4,7 +4,8 @@ import styled from "styled-components";
 import Poster from "./poster";
 import {trimText} from '../Utils'
 import Votes from "./votes";
-import {TouchableOpacity} from 'react-native'
+import {TouchableOpacity} from 'react-native';
+import {useNavigation} from '@react-navigation/native'
 
 
 const Container = styled.View`
@@ -18,15 +19,29 @@ const Title = styled.Text`
   margin: 10px 0px 5px 0px;
 `;
 
-const Vertical = ({ id, poster, title, votes }) => (
-    <TouchableOpacity>
-        <Container>
-            <Poster url={poster}/>
-            <Title>{trimText(title, 10)}</Title>
-            {votes > 0 && <Votes votes={votes}/>}
-        </Container>
-    </TouchableOpacity>
-);
+const Vertical = ({ id, poster, title, votes }) => {
+
+    const navigation = useNavigation()
+    const goToDetail = () => {
+        navigation.navigate("Detail", {
+            id,
+            poster,
+            title,
+            votes
+        })
+    }
+
+    return (
+        <TouchableOpacity onPress={goToDetail}>
+            <Container>
+                <Poster url={poster}/>
+                <Title>{trimText(title, 10)}</Title>
+                {votes > 0 && <Votes votes={votes}/>}
+            </Container>
+        </TouchableOpacity>
+    )
+
+}
 Vertical.propTypes = {
     id : PropTypes.number.isRequired,
     poster : PropTypes.string,
