@@ -13,7 +13,7 @@ const Poster = ({ url }) =>
     <Image source={{uri: apiImage(url)}} />;
 
 Poster.propTypes = {
-    url: PropTypes.string.isRequired
+    url: PropTypes.string
 };
 
 export default Poster;

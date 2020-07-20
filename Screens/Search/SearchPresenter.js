@@ -1,8 +1,8 @@
 import React from 'react';
-import Input from "../../Component/Input";
+import Input from "../../Component/Search/Input";
 import styled from "styled-components";
 import HorizontalSlider from "../../Component/HorizontalSlider";
-import Horizontal from "../../Component/Horizontal";
+import ScrollContainer from "../../Component/ScrollContainer";
 import Vertical from "../../Component/vertical";
 
 const Container = styled.ScrollView`
@@ -11,7 +11,7 @@ const Container = styled.ScrollView`
 
 
 export default  ({movies, shows, keyword, onChange, onSubmit}) => (
-    <Container
+    <ScrollContainer
         contentContatinerStyle={{
             paddingTop : 10
         }}
@@ -48,5 +48,5 @@ export default  ({movies, shows, keyword, onChange, onSubmit}) => (
                 ))}
             </HorizontalSlider>
         )}
-    </Container>
+    </ScrollContainer>
 );
