@@ -8,21 +8,53 @@ import {apiImage} from '../api';
 import Poster from "../Component/poster";
 import Votes from "../Component/votes";
 
-const BG = styled.Image``;
+const BG = styled.Image`
+   height: 100%;
+  opacity: 0.4;
+  position: absolute;
+`;
 
-const Header = styled.View``;
+const Header = styled.View`
+  height: ${Dimensions.get("window").height / 3 }px;
+  align-items: center;
+  justify-content: flex-end;
+`;
 
-const Container= styled.View``;
+const Container= styled.View`
+  flex-direction: row;
+  align-items: center;
+  top: 30px;
+`;
 
-const Title = styled.Text``;
+const Title = styled.Text`
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
+`;
 
-const Info = styled.View``;
+const Info =  styled.View`
+   width: 50%;
+  margin-left: 40px;
+`;
 
+const Data = styled.Text`
+  margin-top: 80px;
+  padding: 0px 30px;
+`;
+
+const DataValue = styled.Text`
+  color: white;
+  opacity: 0.8;
+  font-weight: 500;
+`;
+
+const DataName = styled.Text``;
 
 export default ({
     navigation,
     route : {
-        params : {id, title, backgroundImage, poster, votes}
+        params : {id, title, overview, backgroundImage, poster, votes}
     }
 }) => {
     navigation.setOptions({title})
@@ -34,10 +66,18 @@ export default ({
                     <Poster url={poster}/>
                     <Info>
                         <Title>{title}</Title>
-                        <Votes votes={votes}/>
+                        {votes &&  <Votes votes={votes}/>}
                     </Info>
                 </Container>
             </Header>
+            <Data>
+                {overview && (
+                    <>
+                        <DataName>overview</DataName>
+                        <DataValue>{overview}</DataValue>
+                    </>
+                )}
+            </Data>
         </ScrollContainer>
     )
 }
