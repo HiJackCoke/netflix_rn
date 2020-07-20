@@ -1,4 +1,5 @@
 import React, {useLayoutEffect, useEffect, useState} from 'react';
+import * as WebBrowser from "expo-web-browser";
 import {tvAPI, movieAPI} from '../../api';
 
 import DetailPresenter from "./DetailPresenter";
@@ -34,11 +35,15 @@ export default ({
                 backgroundImage : getDetail.backdrop_path,
                 poster : getDetail.poster_path,
                 overview : getDetail.overview,
-                votes : getDetail.votes_average
+                votes : getDetail.vote_average
             }
         })
 
     };
+
+    const openBrowser = async url => {
+        await WebBrowser.openBrowserAsync(url);
+    }
 
 
     useEffect(() => {
@@ -47,11 +52,12 @@ export default ({
 
     useLayoutEffect(() => {
         navigation.setOptions({title})
-    })
+    });
 
     return (
         <DetailPresenter
             {...detail}
+            openBrowser={openBrowser}
         />
     )
 }

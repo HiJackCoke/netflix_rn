@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f1ab263-88bc-4db8-a074-c1c06b1b9a0d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Component/Detail/Link.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Component/Horizontal.js" beforeDir="false" afterPath="$PROJECT_DIR$/Component/Horizontal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Component/vertical.js" beforeDir="false" afterPath="$PROJECT_DIR$/Component/vertical.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Detail/DetailContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/Detail/DetailContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Detail/DetailPresenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/Detail/DetailPresenter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Detail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/Detail/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screens/Detail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screens/Detail/DetailContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/Detail/DetailContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screens/Detail/DetailPresenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/Detail/DetailPresenter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +72,10 @@
       <workItem from="1595150751876" duration="93000" />
       <workItem from="1595153007773" duration="164000" />
       <workItem from="1595236370097" duration="7232000" />
-      <workItem from="1595244151166" duration="1036000" />
+      <workItem from="1595244151166" duration="2658000" />
+      <workItem from="1595246843302" duration="136000" />
+      <workItem from="1595247025336" duration="515000" />
+      <workItem from="1595247588564" duration="274000" />
     </task>
     <servers />
   </component>
