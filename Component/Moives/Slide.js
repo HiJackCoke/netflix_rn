@@ -71,7 +71,8 @@ const Slide = ({ id, title, backgroundImage, votes, overview, poster }) => {
             votes,
             backgroundImage,
             overview,
-            poster
+            poster,
+            id
         })
     }
 

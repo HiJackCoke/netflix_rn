@@ -1,12 +1,16 @@
 import React from 'react';
 import {View, Text} from 'react-native'
 
-const Detail = () => {
+export default ({
+    navigation,
+    route : {
+        params : {id, title}
+    }
+}) => {
+    navigation.setOptions({title})
     return (
         <View>
-            <Text>sdfdf</Text>
+            <Text>{id}</Text>
         </View>
-    );
-};
-
-export default Detail;
+    )
+}

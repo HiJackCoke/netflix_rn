@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f1ab263-88bc-4db8-a074-c1c06b1b9a0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Screens/Detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Component/Horizontal.js" beforeDir="false" afterPath="$PROJECT_DIR$/Component/Horizontal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Component/HorizontalSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/Component/HorizontalSlider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Component/Moives/Slide.js" beforeDir="false" afterPath="$PROJECT_DIR$/Component/Moives/Slide.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Component/vertical.js" beforeDir="false" afterPath="$PROJECT_DIR$/Component/vertical.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Navigation/Stack.js" beforeDir="false" afterPath="$PROJECT_DIR$/Navigation/Stack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screens/Detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/Detail.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +60,7 @@
       <workItem from="1595149298574" duration="1309000" />
       <workItem from="1595150751876" duration="93000" />
       <workItem from="1595153007773" duration="164000" />
-      <workItem from="1595236370097" duration="3095000" />
+      <workItem from="1595236370097" duration="3687000" />
     </task>
     <servers />
   </component>
