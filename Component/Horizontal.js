@@ -45,7 +45,8 @@ const Horizontal = ({id, title, releaseDate, poster, overview}) => {
             title,
             poster,
             overview,
-            releaseDate
+            releaseDate,
+            isTV : false
         })
     }
 

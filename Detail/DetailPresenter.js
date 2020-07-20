@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import ScrollContainer from "../Component/ScrollContainer";
-import {Dimensions} from "react-native"
+import {Dimensions, ActivityIndicator} from "react-native"
 
 import {apiImage} from '../api';
 import Poster from "../Component/poster";
@@ -49,23 +49,35 @@ const DataValue = styled.Text`
 `;
 
 const DataName = styled.Text``;
-export default ({backgroundImage, title, votes, overview, poster}) => (
+
+export default ({result, loading}) => (
     <ScrollContainer>
         <Header>
-            <BG source={{ uri : apiImage(backgroundImage, "-")}}/>
+            <BG source={{ uri : apiImage(result.backgroundImage, "-")}}/>
             <Container>
-                <Poster url={poster}/>
+                <Poster url={result.poster}/>
                 <Info>
                     <Title>{title}</Title>
-                    {votes &&  <Votes votes={votes}/>}
+                    {result.votes &&  <Votes votes={result.votes}/>}
                 </Info>
             </Container>
         </Header>
         <Data>
-            {overview && (
+            {result.overview && (
                 <>
                     <DataName>overview</DataName>
-                    <DataValue>{overview}</DataValue>
+                    <DataValue>{result.overview}</DataValue>
+                </>
+            )}
+            {loading && (
+                <ActivityIndicator style={{marginTop: 30}} color={"white"}/>
+            )}
+            {result.spoken_languages && (
+                <>
+                    <DataName>Release Date</DataName>
+                    <DataValue>
+                        {result.release_date}
+                    </DataValue>
                 </>
             )}
         </Data>

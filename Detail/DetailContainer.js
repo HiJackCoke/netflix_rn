@@ -7,32 +7,39 @@ import {get} from "react-native/Libraries/TurboModule/TurboModuleRegistry";
 export default ({
     navigation,
     route : {
-        params : {id, title, overview, backgroundImage, poster, votes}
+        params : {id, isTV, title, overview, backgroundImage, poster, votes}
     }
 }) => {
-    const [movie, setMovie] = useState({
-        title,
-        overview,
-        poster,
-        votes,
-        backgroundImage,
-    });
 
-    const [tv, setTv] = useState({
-
-    });
+    const [loading, setLoading] = useState(true);
+    const [detail, setDetail] = useState({
+        loading :true,
+        result : {
+            title,
+            overview,
+            poster,
+            votes,
+            backgroundImage,
+        }
+    })
 
     const getData = async () => {
-        const [getMovie, getMovieError] = await movieAPI.movie(id);
-        setMovie({
-            ...getMovie,
-            title : getMovie.title,
-            backgroundImage : getMovie.backgroundImage,
-            poster : getMovie.poster_path,
-            overview : getMovie.overview,
-            votes : getMovie.votes_average
+        const [getDetail, getDetailError] = isTV ? await tvAPI.show(id) : await movieAPI.movie(id)
+
+        setDetail({
+            loading : false,
+            result: {
+                ...getDetail,
+                title :getDetail.title || getDetail.name,
+                backgroundImage : getDetail.backdrop_path,
+                poster : getDetail.poster_path,
+                overview : getDetail.overview,
+                votes : getDetail.votes_average
+            }
         })
+
     };
+
 
     useEffect(() => {
         getData();
@@ -44,7 +51,7 @@ export default ({
 
     return (
         <DetailPresenter
-            {...movie}
+            {...detail}
         />
     )
 }

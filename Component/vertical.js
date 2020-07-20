@@ -28,6 +28,7 @@ const Vertical = ({ id, poster, title, votes }) => {
             poster,
             title,
             votes,
+            isTV : false
         })
     }
 
