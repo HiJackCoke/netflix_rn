@@ -22,13 +22,14 @@ const Title = styled.Text`
 const Vertical = ({ id, poster, title, votes }) => {
 
     const navigation = useNavigation()
+
     const goToDetail = () => {
         navigation.navigate("Detail", {
-            id,
+            isTV : false,
             poster,
             title,
             votes,
-            isTV : false
+            id
         })
     }
 

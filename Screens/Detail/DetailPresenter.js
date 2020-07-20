@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from "styled-components";
-import ScrollContainer from "../Component/ScrollContainer";
+import ScrollContainer from "../../Component/ScrollContainer";
 import {Dimensions, ActivityIndicator} from "react-native"
 
-import {apiImage} from '../api';
-import Poster from "../Component/poster";
-import Votes from "../Component/votes";
+import {apiImage} from '../../api';
+import Poster from "../../Component/poster";
+import Votes from "../../Component/votes";
 
 const BG = styled.Image`
+  width: 100%;
   height: 100%;
   opacity: 0.4;
   position: absolute;
@@ -38,7 +39,7 @@ const Info =  styled.View`
 `;
 
 const Data = styled.Text`
-  margin-top: 80px;
+  margin-top: 30px;
   padding: 0px 30px;
 `;
 
@@ -48,7 +49,11 @@ const DataValue = styled.Text`
   font-weight: 500;
 `;
 
-const DataName = styled.Text``;
+const DataName = styled.Text`
+ color: white;
+  opacity: 0.8;
+  font-weight: 500;
+`;
 
 export default ({result, loading}) => (
     <ScrollContainer>
@@ -57,7 +62,7 @@ export default ({result, loading}) => (
             <Container>
                 <Poster url={result.poster}/>
                 <Info>
-                    <Title>{title}</Title>
+                    <Title>{result.title}</Title>
                     {result.votes &&  <Votes votes={result.votes}/>}
                 </Info>
             </Container>

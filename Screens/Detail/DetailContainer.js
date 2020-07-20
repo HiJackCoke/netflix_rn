@@ -1,8 +1,8 @@
 import React, {useLayoutEffect, useEffect, useState} from 'react';
-import {tvAPI, movieAPI} from '../api';
+import {tvAPI, movieAPI} from '../../api';
 
 import DetailPresenter from "./DetailPresenter";
-import {get} from "react-native/Libraries/TurboModule/TurboModuleRegistry";
+
 
 export default ({
     navigation,

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from "styled-components";
 import Poster from './poster';
+import Votes from "./votes";
 import {TouchableOpacity} from 'react-native'
 import {trimText, formDate} from '../Utils';
 import {useNavigation} from '@react-navigation/native'
@@ -11,6 +12,11 @@ const Container = styled.View`
   margin-bottom: 30px;
   flex-direction: row;
   align-items: flex-start;
+`;
+
+const ReleaseData = styled.Text`
+  color: white;
+  font-size: 12px;
 `;
 
 const Data = styled.View`
@@ -25,10 +31,6 @@ const Title = styled.Text`
   margin-bottom: 10px;
 `;
 
-const ReleaseDate = styled.Text`
-  color: white;
-  font-size: 12px;
-`;
 
 const Overview = styled.Text`
   margin-top: 10px;
@@ -36,17 +38,17 @@ const Overview = styled.Text`
 `;
 
 
-const Horizontal = ({id, title, releaseDate, poster, overview}) => {
+const Horizontal = ({id, title, votes, releaseDate, poster, overview}) => {
 
     const navigation = useNavigation();
     const goToDetail = () => {
         navigation.navigate("Detail", {
+            isTV : true,
             id,
             title,
             poster,
             overview,
-            releaseDate,
-            isTV : false
+            releaseDate
         })
     }
 
@@ -58,7 +60,8 @@ const Horizontal = ({id, title, releaseDate, poster, overview}) => {
                     <Title>
                         {trimText(title, 30)}
                     </Title>
-                    {releaseDate ? <ReleaseDate>{formDate(releaseDate)}</ReleaseDate> : null}
+                    {releaseDate ? <ReleaseData>{formDate(releaseDate)}</ReleaseData> : null}
+                    <Votes votes={votes}/>
                     <Overview>{trimText(overview, 130)}</Overview>
                 </Data>
             </Container>
