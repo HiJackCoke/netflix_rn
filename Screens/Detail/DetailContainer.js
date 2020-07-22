@@ -21,6 +21,9 @@ export default ({
             poster,
             votes,
             backgroundImage,
+            videos : {
+                results : []
+            }
         }
     })
 

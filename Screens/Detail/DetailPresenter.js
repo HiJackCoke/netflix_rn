@@ -102,6 +102,21 @@ export default ({openBrowser, result, loading}) => (
                     />
                 </>
             )}
+            {result.videos.results?.length > 0 && (
+                <>
+                    <DataName>Videos</DataName>
+                    {result.videos.results.map(video => (
+                        <Link
+                            text={video.name}
+                            icon={video.id}
+                            onPress={() => (
+                                openBrowser(`https://www.youtube.com/watch?v=${video.key}`)
+                            )}
+                        />
+
+                    ))}
+                </>
+            )}
         </Data>
     </ScrollContainer>
 )
