@@ -10,9 +10,12 @@ netflix_clone
 - [x] 검색페이지 구현 및 키워드 서칭 결과 출력
 - [x] 세부페이지 구현 및 링크 추가
 
+## 완성 화면
+
 ## 활용한 기술
 - [x] NodeJs, React-native, Hook(useState, useEffect, useLayoutEffect)
 - [x] axios를 이용한 Api 연동
 - [x] Vertical, Horizontal, Animation slide
 
-<img src="https://user-images.githubusercontent.com/60862525/93018952-b7b09700-f60e-11ea-8e56-6502bb20873e.gif" />
+## Study Note
+
