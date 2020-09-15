@@ -22,15 +22,19 @@ netflix_clone
 axios를 이용한 API 연동
 - [x] 비동기 방식으로 API를 불러오는 함수 만들기
 - [x] TMDB 사이트 API를 활용하여 원하는 영화 및 TV Show(Popular, upcoming, airing_today, 등) 함수 만들기
+<img src="https://user-images.githubusercontent.com/54699548/93196434-64ad2000-f785-11ea-969d-40a2135408a9.png" width="480"/>
+
 
 Hook 사용
 - [x] useState 
  - useState을 이용해 초기 상태값 설정
  - 키워드 값을 통한 Search 결과 출력
+<img src="https://user-images.githubusercontent.com/54699548/93212428-8dd9aa80-f79d-11ea-8e90-08e0c9b0a0e5.png" width="480" />
 
 - [x] useEffect 
  - TMDB의 API를 불러오기
  - Api mapping
+<img src="https://user-images.githubusercontent.com/54699548/93212715-eb6df700-f79d-11ea-948e-39ac288eaa53.png" width="480" />
  
 
 
