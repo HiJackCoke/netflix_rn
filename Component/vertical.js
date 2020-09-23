@@ -25,7 +25,7 @@ const Vertical = ({ id, poster, title, votes }) => {
 
     const goToDetail = () => {
         navigation.navigate("Detail", {
-            isTV : false,
+            isTV : true,
             poster,
             title,
             votes,
