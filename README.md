@@ -4,14 +4,15 @@ netflix_clone
 
 - [x] API 연동 및 받아온 DATA 뿌려주기
 - [x] Movie 슬라이드 구현(nowPlaying)
-- [x] 이미지 슬라이드쇼(vertical, horizontal, scrollContainer)
-- [x] Movie 메인화면 구현(popular, upcoming)
-- [x] Show 메인화면 구현(popular, topRated, airing_today)
+- [x] 이미지 슬라이드쇼(movieSlied, vertical, horizontal, scrollContainer)
+- [x] Movie 구현(nowPlaying, popular, upcoming)
+- [x] Show 화면 구현(popular, topRated, airing_today)
 - [x] 검색페이지 구현 및 키워드 서칭 결과 출력
 - [x] 세부페이지 구현 및 링크 추가
+- [x] 선택한 ID에 대한 추천 영화 및 TV 구현
 
 ## 완성 화면
-<img src="https://user-images.githubusercontent.com/54699548/93192937-31689200-f781-11ea-84d2-1862399e6a38.gif" /> <img src="https://user-images.githubusercontent.com/54699548/93193254-92906580-f781-11ea-87d7-3aac4349d1ce.gif" /> <img src="https://user-images.githubusercontent.com/54699548/93193348-b2278e00-f781-11ea-8228-9a013bb236c5.gif"/>
+<img src="https://user-images.githubusercontent.com/54699548/93192937-31689200-f781-11ea-84d2-1862399e6a38.gif" /> <img src="https://user-images.githubusercontent.com/54699548/93193254-92906580-f781-11ea-87d7-3aac4349d1ce.gif" /> <img src="https://user-images.githubusercontent.com/54699548/93193348-b2278e00-f781-11ea-8228-9a013bb236c5.gif"/> <img src="https://user-images.githubusercontent.com/54699548/93993665-fb06c480-fdc9-11ea-90dd-611686a14378.gif" />
 ## 활용한 기술
 - [x] NodeJs, React-native, Hook(useState, useEffect, useLayoutEffect)
 - [x] axios를 이용한 API 연동
