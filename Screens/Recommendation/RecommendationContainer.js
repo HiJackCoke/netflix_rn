@@ -6,7 +6,7 @@ import * as WebBrowser from "expo-web-browser";
 export default ({
     navigation,
     route : {
-        params: {id, title, backgroundImage, poster, votes}
+        params: {id, title, isTV }
     }
 }) => {
     const [recommendation, setRecommendation] = useState({
@@ -17,7 +17,7 @@ export default ({
 
     const getData = async () => {
 
-        const [recommendation, recommendationError] = await movieAPI.recommendations(id);
+        const [recommendation, recommendationError] = isTV ? await tvAPI.recommendations(id) : await movieAPI.recommendations(id);
 
         setRecommendation({
             loading: false,

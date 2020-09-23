@@ -38,7 +38,8 @@ export const tvAPI = {
     topRated : () => getAnything('/tv/top_rated'),
     popular : () => getAnything('/tv/popular'),
     search : query => getAnything('/search/tv', {query}),
-    show: id => getAnything(`/tv/${id}`, {append_to_response : "videos"})
+    show: id => getAnything(`/tv/${id}`, {append_to_response : "videos"}),
+    recommendations: id => getAnything(`/movie/${id}/recommendations`)
 };
 
 // export const apiImage = path => `https://imgae.tmdb.org/t/p/w500${path}`;
