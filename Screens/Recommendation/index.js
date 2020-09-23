@@ -1,3 +1,2 @@
-import RecContainer from "./RecContainer";
-
-export default RecContainer;
+import RecommendationContainer from "./RecommendationContainer";
+export default RecommendationContainer;

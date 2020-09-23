@@ -2,6 +2,7 @@ import React, {useLayoutEffect, useEffect, useState} from 'react';
 import * as WebBrowser from "expo-web-browser";
 import {tvAPI, movieAPI} from '../../api';
 
+
 import DetailPresenter from "./DetailPresenter";
 import {get} from "react-native/Libraries/TurboModule/TurboModuleRegistry";
 
@@ -16,7 +17,7 @@ export default ({
     const [loading, setLoading] = useState(true);
     const [detail, setDetail] = useState({
         loading :true,
-        isTV: false,
+
         result : {
             title,
             overview,
