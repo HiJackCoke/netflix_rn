@@ -60,8 +60,11 @@ const DataValue = styled.Text`
 `;
 
 
-export default ({openBrowser, result, loading}) => (
-    <ScrollContainer>
+export default ({openBrowser, refreshFn, result, loading}) => (
+    <ScrollContainer
+        loading={loading}
+        refreshFn={refreshFn}
+    >
         <Header>
             <BG source={{ uri : apiImage(result.backgroundImage, "-")}}/>
             <Container>

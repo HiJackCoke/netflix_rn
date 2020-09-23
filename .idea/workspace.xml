@@ -33,7 +33,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f1ab263-88bc-4db8-a074-c1c06b1b9a0d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/READMD.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screens/Recommendation/RecContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screens/Recommendation/RecPresenter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screens/Recommendation/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Component/Horizontal.js" beforeDir="false" afterPath="$PROJECT_DIR$/Component/Horizontal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Component/vertical.js" beforeDir="false" afterPath="$PROJECT_DIR$/Component/vertical.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screens/Detail/DetailContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/Detail/DetailContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screens/Detail/DetailPresenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/Screens/Detail/DetailPresenter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +117,7 @@
       <workItem from="1600066165805" duration="1184000" />
       <workItem from="1600067884585" duration="12000" />
       <workItem from="1600077253887" duration="1679000" />
+      <workItem from="1600834943459" duration="5993000" />
     </task>
     <servers />
   </component>
@@ -132,9 +141,25 @@
       <screen x="0" y="23" width="1680" height="979" />
     </state>
     <state x="1028" y="246" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.979@0.23.1680.979" timestamp="1595244613183" />
-    <state x="811" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1588079497667">
-      <screen x="0" y="23" width="1680" height="979" />
+    <state width="1247" height="243" key="GridCell.Tab.0.bottom" timestamp="1600835022177">
+      <screen x="0" y="23" width="1680" height="970" />
     </state>
-    <state x="811" y="241" width="670" height="676" key="search.everywhere.popup/0.23.1680.979@0.23.1680.979" timestamp="1588079497667" />
+    <state width="1247" height="243" key="GridCell.Tab.0.bottom/0.23.1680.970@0.23.1680.970" timestamp="1600835022177" />
+    <state width="1247" height="243" key="GridCell.Tab.0.center" timestamp="1600835022176">
+      <screen x="0" y="23" width="1680" height="970" />
+    </state>
+    <state width="1247" height="243" key="GridCell.Tab.0.center/0.23.1680.970@0.23.1680.970" timestamp="1600835022176" />
+    <state width="1247" height="243" key="GridCell.Tab.0.left" timestamp="1600835022175">
+      <screen x="0" y="23" width="1680" height="970" />
+    </state>
+    <state width="1247" height="243" key="GridCell.Tab.0.left/0.23.1680.970@0.23.1680.970" timestamp="1600835022175" />
+    <state width="1247" height="243" key="GridCell.Tab.0.right" timestamp="1600835022176">
+      <screen x="0" y="23" width="1680" height="970" />
+    </state>
+    <state width="1247" height="243" key="GridCell.Tab.0.right/0.23.1680.970@0.23.1680.970" timestamp="1600835022176" />
+    <state x="697" y="227" width="602" height="522" key="find.popup" timestamp="1600838496798">
+      <screen x="0" y="23" width="1680" height="970" />
+    </state>
+    <state x="697" y="227" width="602" height="522" key="find.popup/0.23.1680.970@0.23.1680.970" timestamp="1600838496798" />
   </component>
 </project>

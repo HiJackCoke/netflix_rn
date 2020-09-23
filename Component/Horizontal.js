@@ -38,12 +38,12 @@ const Overview = styled.Text`
 `;
 
 
-const Horizontal = ({id, title, votes, releaseDate, poster, overview}) => {
+const Horizontal = ({isTV=false, id, title, votes, releaseDate, poster, overview}) => {
 
     const navigation = useNavigation();
     const goToDetail = () => {
         navigation.navigate("Detail", {
-            isTV : true,
+            isTV,
             id,
             title,
             poster,

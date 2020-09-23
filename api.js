@@ -29,7 +29,7 @@ export const movieAPI = {
     upcoming : () => getAnything("/movie/upcoming", {region: "kr"}),
     search : query => getAnything("/search/movie", {query}),
     movie: id => getAnything(`/movie/${id}`, {append_to_response : "videos"}),
-    discover : () => getAnything('/discover/movie')
+    recommendations: id => getAnything(`/movie/${id}/recommendations`)
 };
 
 export const tvAPI = {
